@@ -9,7 +9,8 @@ export default [
       credits: 4,
       description:
         "This course provides an in-depth study of the fundamentals of rocket propulsion, covering topics such as propulsion theory, engine types, fuel chemistry, and the practical applications of rocket technology. Designed for students with a strong background in physics and engineering, the course includes both theoretical instruction and hands-on laboratory work",
-    },
+      image: "https://www.cecs.ucf.edu/web/wp-content/uploads/2020/05/Kareem-Ahmed-rocket_for_web.jpg"
+      },
     {
       _id: "RS102",
       name: "Aerodynamics",
@@ -20,7 +21,8 @@ export default [
       credits: 3,
       description:
         "This course offers a comprehensive exploration of aerodynamics, focusing on the principles and applications of airflow and its effects on flying objects. Topics include fluid dynamics, airfoil design, lift and drag forces, and the aerodynamic considerations in aircraft design. The course blends theoretical learning with practical applications, suitable for students pursuing a career in aeronautics or astronautics engineering.",
-    },
+      image: "https://www.airbus.com/sites/g/files/jlcbta136/files/styles/airbus_608x608/public/2023-01/Aerodynamics-aircraft-design-a350.png?itok=WgklxNAL"
+      },
     {
       _id: "RS103",
       name: "Spacecraft Design",
