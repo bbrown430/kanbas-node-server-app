@@ -18,7 +18,6 @@ const todos = [
   { id: 4, title: "Todo 4", completed: true },
 ];
 
-
 const lab5 = (app) => {
 
   app.post("/a5/todos", (req, res) => {
@@ -47,8 +46,6 @@ const lab5 = (app) => {
     res.sendStatus(200);
   });
 
-
-
   app.get("/a5/todos", (req, res) => {
     const { completed } = req.query;
     if (completed !== undefined) {
@@ -70,6 +67,12 @@ const lab5 = (app) => {
     };
     todos.push(newTodo);
     res.json(todos);
+  });
+
+  app.get("/a5/todos/:id", (req, res) => {
+    const { id } = req.params;
+    const todo = todos.find((todo) => todo.id === parseInt(id));
+    res.json(todo);
   });
 
   app.get("/a5/todos/:id/delete", (req, res) => {
@@ -101,13 +104,6 @@ const lab5 = (app) => {
     const todo = todos.find((t) => t.id === parseInt(id));
     todo.description = description;
     res.json(todos);
-  });
-
-
-  app.get("/a5/todos/:id", (req, res) => {
-    const { id } = req.params;
-    const todo = todos.find((todo) => todo.id === parseInt(id));
-    res.json(todo);
   });
 
   app.get("/a5/welcome", (req, res) => {
